@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #067ac8;
+    --primary: #0a6f3e;
     --secondary: #057b39;
     --tertiary: #09b7ae;
     --light: #F1F3FA;
@@ -125,6 +125,56 @@
     margin-left: 8px;
 }
 
+.carousel-item img {
+    height: 620px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+/* Adjust the height of main section images */
+.carousel-item img,
+.page-header,
+.about {
+    height: 620px; /* Increase the height */
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ensure text is centered */
+}
+
+.about h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light);
+    font-size: 50px;
+}
+
+
+/* Center the title on the image */
+.page-header h1,
+.about h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light);
+    font-size: 50px;
+    text-align: center;
+}
+.carousel-item img,
+.page-header,
+.about {
+    height: 620px; /* Increase the height */
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
@@ -171,7 +221,7 @@
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 15%;
+    width: 20%;
 }
 
 .carousel-control-prev-icon,
