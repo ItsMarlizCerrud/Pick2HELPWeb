@@ -16,6 +16,17 @@
 }
 
 
+@keyframes slideInRight {
+    from {
+        transform: translateX(0); /* Elimina el movimiento */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* Sin desplazamiento */
+        opacity: 1;
+    }
+}
+
 .fw-medium {
     font-weight: 500;
 }
