@@ -15,16 +15,15 @@
     z-index: 99;
 }
 
+.main-paragraph {
+    font-size: 1.5rem; /* Ajusta el tamaño según sea necesario */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas */
+}
 
-@keyframes slideInRight {
-    from {
-        transform: translateX(0); /* Elimina el movimiento */
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0); /* Sin desplazamiento */
-        opacity: 1;
-    }
+/* Cambiar el tamaño del párrafo solo en la sección Home */
+#header-carousel .carousel-caption p {
+    font-size: 24px; /* Ajusta el tamaño según sea necesario */
+    line-height: 25px; /* Ajusta el espaciado entre líneas */
 }
 
 .fw-medium {
@@ -137,14 +136,14 @@
 }
 
 .carousel-item img {
-    height: 620px; /* Adjust the height as needed */
+    height: 800px; /* Adjust the height as needed */
     object-fit: cover;
 }
 /* Adjust the height of main section images */
 .carousel-item img,
 .page-header,
 .about {
-    height: 620px; /* Increase the height */
+    height: 650px; /* Increase the height */
     background-size: cover;
     object-fit: cover;
     display: flex;
@@ -168,7 +167,7 @@
 .carousel-item img,
 .page-header,
 .about {
-    height: 620px; /* Increase the height */
+    height: 670px; /* Increase the height */
     background-size: cover;
     object-fit: cover;
 }
