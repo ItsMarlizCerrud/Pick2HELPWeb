@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #067ac8;
+    --primary: #0a6f3e;
     --secondary: #057b39;
     --tertiary: #09b7ae;
     --light: #F1F3FA;
@@ -15,6 +15,16 @@
     z-index: 99;
 }
 
+.main-paragraph {
+    font-size: 1.5rem; /* Ajusta el tamaño según sea necesario */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas */
+}
+
+/* Cambiar el tamaño del párrafo solo en la sección Home */
+#header-carousel .carousel-caption p {
+    font-size: 24px; /* Ajusta el tamaño según sea necesario */
+    line-height: 25px; /* Ajusta el espaciado entre líneas */
+}
 
 .fw-medium {
     font-weight: 500;
@@ -125,6 +135,46 @@
     margin-left: 8px;
 }
 
+
+.carousel-item img {
+    height: 800px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+/* Adjust the height of main section images */
+.carousel-item img,
+.page-header,
+.about {
+    height: 650px; /* Increase the height */
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Center the title on the image */
+.page-header h1,
+.about h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light);
+    font-size: 50px;
+    text-align: center;
+}
+.carousel-item img,
+.page-header,
+.about {
+    height: 670px; /* Increase the height */
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
@@ -181,7 +231,7 @@
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 15%;
+    width: 20%;
 }
 
 .carousel-control-prev-icon,
