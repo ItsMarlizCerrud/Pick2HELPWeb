@@ -1,9 +1,10 @@
 /********** Template CSS **********/
 :root {
-    --primary: #4761FF;
-    --secondary: #555555;
+    --primary: #0a6f3e;
+    --secondary: #057b39;
+    --tertiary: #09b7ae;
     --light: #F1F3FA;
-    --dark: #1C2035;
+    --dark: #154229;
 }
 
 .back-to-top {
@@ -12,6 +13,17 @@
     right: 30px;
     bottom: 30px;
     z-index: 99;
+}
+
+.main-paragraph {
+    font-size: 1.5rem; /* Ajusta el tamaño según sea necesario */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas */
+}
+
+/* Cambiar el tamaño del párrafo solo en la sección Home */
+#header-carousel .carousel-caption p {
+    font-size: 24px; /* Ajusta el tamaño según sea necesario */
+    line-height: 25px; /* Ajusta el espaciado entre líneas */
 }
 
 .fw-medium {
@@ -77,6 +89,24 @@
 
 
 /*** Navbar ***/
+
+.logo-img {
+    height: 80px; /* ajusta el tamaño */
+    width: auto;
+}
+
+
+.navbar-brand {
+    position: relative;
+    right: 65px; /* mueve el logo */
+}
+
+
+.navbar-nav {
+    display: flex;
+    gap: 35px;
+}
+
 .sticky-top {
     top: -100px;
     transition: .5s;
@@ -104,6 +134,46 @@
     vertical-align: middle;
     margin-left: 8px;
 }
+
+
+.carousel-item img {
+    height: 800px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+/* Adjust the height of main section images */
+.carousel-item img,
+.page-header,
+.about {
+    height: 650px; /* Increase the height */
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Center the title on the image */
+.page-header h1,
+.about h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light);
+    font-size: 50px;
+    text-align: center;
+}
+.carousel-item img,
+.page-header,
+.about {
+    height: 670px; /* Increase the height */
+    background-size: cover;
+    object-fit: cover;
+}
+
+
 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
@@ -137,6 +207,7 @@
 }
 
 
+
 /*** Header ***/
 .carousel-caption {
     top: 0;
@@ -149,9 +220,18 @@
     z-index: 1;
 }
 
+.hero-divider {
+    width: 70px;
+    height: 6px;
+    background-color: var(--tertiary);
+    margin: 0.75rem 0 1.25rem;
+    border-radius: 2px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
 .carousel-control-prev,
 .carousel-control-next {
-    width: 15%;
+    width: 20%;
 }
 
 .carousel-control-prev-icon,
@@ -166,7 +246,7 @@
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
         position: relative;
-        min-height: 450px;
+        min-height: 400px;
     }
     
     #header-carousel .carousel-item img {
@@ -178,7 +258,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/trabajomanual.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -195,7 +275,7 @@
 
 /*** About ***/
 .about {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/about.jpg) left center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/ejecutivo.png) left center no-repeat;
     background-size: cover;
 }
 
@@ -384,7 +464,7 @@
 
 /*** Footer ***/
 .footer {
-    color: #B0B9AE;
+    color: #ffffff;
 }
 
 .footer .btn.btn-link {
@@ -392,7 +472,7 @@
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
-    color: #B0B9AE;
+    color: #ffffff;
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
