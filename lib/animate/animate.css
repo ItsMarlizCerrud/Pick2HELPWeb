@@ -1488,15 +1488,24 @@
   animation-name: slideInLeft;
 }
 
-@keyframes slideInRight {
+/* Nueva animación para que los títulos aparezcan centrados */
+@keyframes fadeInCenter {
   from {
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
+      opacity: 0; /* Comienza invisible */
+      transform: scale(0.9); /* Comienza ligeramente reducido */
   }
-
   to {
-    transform: translate3d(0, 0, 0);
+      opacity: 1; /* Totalmente visible */
+      transform: scale(1); /* Tamaño normal */
   }
+}
+
+/* Clase para aplicar la nueva animación */
+.fadeInCenter {
+  animation-name: fadeInCenter;
+  animation-duration: 1s; /* Duración de la animación */
+  animation-timing-function: ease-out; /* Suavidad en la animación */
+  animation-fill-mode: both; /* Mantiene el estado final */
 }
 
 .slideInRight {
