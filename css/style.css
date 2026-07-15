@@ -137,14 +137,14 @@
 
 
 .carousel-item img {
-    height: 800px; /* Adjust the height as needed */
+    height: 700px; /* Adjust the height as needed */
     object-fit: cover;
 }
 /* Adjust the height of main section images */
 .carousel-item img,
 .page-header,
 .about {
-    height: 650px; /* Increase the height */
+    height: 600px; /* Increase the height */
     background-size: cover;
     object-fit: cover;
     display: flex;
@@ -168,7 +168,7 @@
 .carousel-item img,
 .page-header,
 .about {
-    height: 670px; /* Increase the height */
+    height: 600px; /* Increase the height */
     background-size: cover;
     object-fit: cover;
 }
