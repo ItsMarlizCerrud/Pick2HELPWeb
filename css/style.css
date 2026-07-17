@@ -137,14 +137,14 @@
 
 
 .carousel-item img {
-    height: 800px; /* Adjust the height as needed */
+    height: 700px; /* Adjust the height as needed */
     object-fit: cover;
 }
 /* Adjust the height of main section images */
 .carousel-item img,
 .page-header,
 .about {
-    height: 650px; /* Increase the height */
+    height: 600px; /* Increase the height */
     background-size: cover;
     object-fit: cover;
     display: flex;
@@ -168,7 +168,7 @@
 .carousel-item img,
 .page-header,
 .about {
-    height: 670px; /* Increase the height */
+    height: 600px; /* Increase the height */
     background-size: cover;
     object-fit: cover;
 }
@@ -258,7 +258,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/carpintero.png) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/trabajomanual.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -275,7 +275,7 @@
 
 /*** About ***/
 .about {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/About.png) left center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/ejecutivo.png) left center no-repeat;
     background-size: cover;
 }
 
