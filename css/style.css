@@ -67,6 +67,13 @@
     height: 38px;
 }
 
+@media (max-width: 576px) {
+    .btn-square {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 .btn-sm-square {
     width: 32px;
     height: 32px;
@@ -155,16 +162,21 @@
 
 /* Center the title on the image */
 .page-header h1,
-.about h1 {
+.about h1,
+#services h1,
+#task h1,
+#pages h1,
+#contact h1 {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--light);
-    font-size: 50px;
-    text-align: center;
+    color: var(--light); /* Color blanco */
+    font-size: 50px; /* Tamaño del texto */
+    text-align: center; /* Centrado horizontal */
 }
+
 .carousel-item img,
 .page-header,
 .about {
