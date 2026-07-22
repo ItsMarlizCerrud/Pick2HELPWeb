@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Pick2Help Website</title>
+    <title>Pick2HELP</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/P2H.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,53 +31,47 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div>
-    <!-- Spinner End -->
+    
 
-
-        <!-- Topbar Start -->
+         <!-- Topbar Start -->
     <div class="container-fluid bg-primary text-white d-none d-lg-flex">
         <div class="container py-3">
             <div class="d-flex align-items-center">
                 <a href="index.html">
                 </a>
-                <div class="ms-auto d-flex align-items-center">
-                    
+            
+             <div class="ms-auto d-flex align-items-center">
                 </div>
             </div>
         </div>
     </div>
     <!-- Topbar End -->
 
-
-    <!-- Navbar Start -->
-     
+      <!-- Navbar Start -->
     <div class="container-fluid bg-white sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
-                               
+                
+                
                 <a href="index.html" class="navbar-brand">
                     <img src="img/P2HLogo.png" alt="Logo" class="logo-img">
                     <a href="index.html" class="navbar-brand ms-4">
                 </a>
 
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+               <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Opportunities</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
                         <a href="project.html" class="nav-item nav-link">Task</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
-                                <a href="team.html" class="dropdown-item">Job Seekers</a>
-                                <a href="quote.html" class="dropdown-item active">Employers</a>
+                                <a href="team.html" class="dropdown-item">Our Team</a>
+                                <a href="quote.html" class="dropdown-item">Quotation</a>
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -91,97 +85,154 @@
     </div>
     <!-- Navbar End -->
 
+    <!-- HERO -->
+    <section class="hero">
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <h1 class="display-2 text-white mb-4 animated slideInDown">Employers</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-primary" aria-current="page">Employers</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <!-- Page Header End -->
+        <div class="hero-card">
 
+            <span class="small-title">
+                Join Pick2HELP
+            </span>
 
-    <!-- Quote Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-medium text-primary">Get A Quote</p>
-                    <h1 class="display-5 mb-4">Need Our Expert Help? We're Here!</h1>
-                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo</p>
-                    <a class="d-inline-flex align-items-center rounded overflow-hidden border border-primary" href="">
-                        <span class="btn-lg-square bg-primary" style="width: 55px; height: 55px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </span>
-                        <span class="fs-5 fw-medium mx-4">+507 123-1234</span>
-                    </a>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <h2 class="mb-4">Get A Free Quote</h2>
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="mail" placeholder="Your Email">
-                                <label for="mail">Your Email</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
-                                <label for="mobile">Your Mobile</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="service">
-                                    <option selected>Digital Marketing</option>
-                                    <option value="">Social Marketing</option>
-                                    <option value="">Content Marketing</option>
-                                    <option value="">E-mail Marketing</option>
-                                </select>
-                                <label for="service">Choose A Service</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 130px"></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                        </div>
+            <h1>Create an account to get started</h1>
+
+            <p class="subtitle">
+                Choose the option that best describes you
+            </p>
+
+            <div class="line"></div>
+
+            <div class="cards-wrapper">
+
+                <!-- LEFT CARD -->
+                <div class="register-card seeker">
+
+                    job-seeker.png
+
+                    <div class="icon green">
+                        <i class="ri-briefcase-line"></i>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Quote Start -->
-        
 
-    <!-- Footer Start -->
+                    <h2>Job Seekers</h2>
+
+                    <p>
+                        Find opportunities that match your skills
+                        and grow your career.
+                    </p>
+
+                    <ul>
+                        <li>Browse and apply to jobs</li>
+                        <li>Manage your profile and skills</li>
+                        <li>Track your applications</li>
+                    </ul>
+
+                    <button>
+                        Register as Job Seeker
+                    </button>
+
+                </div>
+
+                <!-- OR -->
+                <div class="divider">
+                    <span>or</span>
+                </div>
+
+                <!-- RIGHT CARD -->
+                <div class="register-card employer">
+
+                    employer.png
+
+                    <div class="icon blue">
+                        <i class="ri-building-line"></i>
+                    </div>
+
+                    <h2>Employers</h2>
+
+                    <p>
+                        Post jobs, find talent and build
+                        your dream team.
+                    </p>
+
+                    <ul>
+                        <li>Post jobs and manage listings</li>
+                        <li>Find and connect with talent</li>
+                        <li>Manage applications and hires</li>
+                    </ul>
+
+                    <button>
+                        Register as Employer
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="steps">
+
+        <span class="small-title">
+            How It Works
+        </span>
+
+        <h2>Simple steps to get started</h2>
+
+        <p>
+            Whether you're looking for work or hiring talent,
+            Pick2HELP makes it easy.
+        </p>
+
+        <div class="steps-grid">
+
+            <div class="step">
+                <div class="step-icon">
+                    <i class="ri-user-add-line"></i>
+                </div>
+                <span>1</span>
+                <h3>Create Account</h3>
+                <p>Choose your role and sign up in minutes.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-icon">
+                    <i class="ri-file-list-line"></i>
+                </div>
+                <span>2</span>
+                <h3>Complete Profile</h3>
+                <p>Add your skills and preferences.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-icon">
+                    <i class="ri-search-line"></i>
+                </div>
+                <span>3</span>
+                <h3>Find Opportunities</h3>
+                <p>Search and connect with opportunities.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-icon">
+                    <i class="ri-checkbox-circle-line"></i>
+                </div>
+                <span>4</span>
+                <h3>Get Started</h3>
+                <p>Apply, hire and achieve your goals.</p>
+            </div>
+
+        </div>
+
+        <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Our Office</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+507 123-1234</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Info@Pick2Help.com</p>
                     <div class="d-flex pt-3">
                         <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
