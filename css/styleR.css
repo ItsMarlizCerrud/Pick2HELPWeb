@@ -94,10 +94,12 @@
     }
 }
 
+
+
 /*** Footer ***/
 .footer {
     color: #ffffff;
-}
+    }
 
 .footer .btn.btn-link {
     display: block;
@@ -347,16 +349,18 @@ nav a{
 }
 
 .register-card img{
-    width:260px;
+    width:400px;
     margin-bottom:20px;
 }
 
 .icon{
-    width:90px;
-    height:90px;
+    
+    position: relative;
+    width:100px;
+    height:100px;
 
     margin:auto;
-    margin-top:-20px;
+    margin-top:-100px;
 
     border-radius:50%;
 
@@ -370,6 +374,46 @@ nav a{
     box-shadow:
     0 10px 20px rgba(0,0,0,.08);
 }
+
+.imgEdificio{
+    
+    width: 80px !important;   
+    height: 80px !important;
+
+    margin:auto;
+    margin-top:20px;
+
+        display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.imgMaletin{
+    
+    width: 80px !important;   
+    height: 80px !important;
+
+    margin:auto;
+    margin-top:20px;
+
+        display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.imgSteps{
+    
+    width: 75px !important;   
+    height: 75px !important;
+
+    margin:auto;
+    margin-top:15px;
+
+        display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
 
 .green{
     background:#19c8a7;
