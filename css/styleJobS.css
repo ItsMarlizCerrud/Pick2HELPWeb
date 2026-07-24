@@ -179,12 +179,12 @@
 
 .left-side h3{
     margin-top:45px;
-    font-size:24px;
+    font-size:20px;
     color:#17233a;
 }
 
 .left-side h1{
-    font-size:70px;
+    font-size:50px;
     color:#12bfa5;
     line-height:1;
     margin:15px 0;
@@ -192,8 +192,8 @@
 
 .description{
     color:#6c758c;
-    max-width:310px;
-    font-size:20px;
+    max-width:400px;
+    font-size:17px;
     line-height:1.8;
 }
 
@@ -437,7 +437,7 @@
     font-weight:500;
 }
 
-.google-btn img{
+.googlelogo{
     width:22px;
 }
 
