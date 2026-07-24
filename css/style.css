@@ -287,7 +287,7 @@
 
 /*** About ***/
 .about {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/team-1.jpg) left center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/image.png) left center no-repeat;
     background-size: cover;
 }
 
@@ -302,6 +302,12 @@
     outline: none !important;
     padding: 18px 20px 20px 28px;
     background: var(--primary);
+}
+
+.team-item img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .btn-play:before {
