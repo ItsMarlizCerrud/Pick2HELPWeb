@@ -209,6 +209,7 @@
         visibility: hidden;
         transition: .5s;
     }
+}
 
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
