@@ -383,18 +383,6 @@
     border-bottom: 18px solid transparent;
 }
 
-.YOYO {
-    height: 350px;
-    object-fit: cover;
-    width: 100%;
-    position: relative;
-    text-align: center;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
-    font-size: 1.25rem;
-    margin-left: 100px;
-    
-}
-
 @keyframes pulse-border {
     0% {
         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
