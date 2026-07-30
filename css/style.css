@@ -180,7 +180,7 @@
 .carousel-item img,
 .page-header,
 .about {
-    height: 600px; /* Increase the height */
+    height: 800px; /* Increase the height */
     background-size: cover;
     object-fit: cover;
 }
@@ -269,8 +269,38 @@
     }
 }
 
-.page-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/trabajomanual.png) center center no-repeat;
+.page-headerAb {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/about.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerCont {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/contactUS.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerOpp {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/opport.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerTask {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/task.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerPag {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/pages.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerEmp {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/employer.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerJobS {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/job-seekers.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -278,7 +308,8 @@
     color: var(--light);
 }
 
-.page-header .breadcrumb-item,
+.
+page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
     font-size: 18px;
     color: var(--light);
