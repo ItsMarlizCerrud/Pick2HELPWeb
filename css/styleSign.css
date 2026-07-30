@@ -223,6 +223,10 @@ body{
 
 /* LOGO */
 
+.googlelogo{
+    width:22px;
+}
+
 .logo-circle{
     width:95px;
     height:95px;
