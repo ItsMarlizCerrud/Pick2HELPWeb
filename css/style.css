@@ -67,7 +67,7 @@
     height: 38px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 676px) {
     .btn-square {
         width: 30px;
         height: 30px;
@@ -75,7 +75,7 @@
 }
 
 .btn-sm-square {
-    width: 32px;
+    width: 62px;
     height: 32px;
 }
 
@@ -144,20 +144,21 @@
 
 
 .carousel-item img {
-    height: 700px; /* Adjust the height as needed */
+    height: 800px; /* Adjust the height as needed */
     object-fit: cover;
 }
 /* Adjust the height of main section images */
 .carousel-item img,
 .page-header,
 .about {
-    height: 600px; /* Increase the height */
+    height: 700px; /* Increase the height */
     background-size: cover;
     object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 
 /* Center the title on the image */
@@ -259,7 +260,7 @@
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
         position: relative;
-        min-height: 400px;
+        min-height: 500px;
     }
     
     #header-carousel .carousel-item img {
