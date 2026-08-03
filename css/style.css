@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #0a6f3e;
+    --primary: #137ade;
     --secondary: #057b39;
     --tertiary: #09b7ae;
     --light: #F1F3FA;
@@ -35,12 +35,12 @@
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    transition: opacity .3s ease-out, visibility 0s linear .3s;
     z-index: 99999;
 }
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    transition: opacity .3s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
 }
@@ -65,6 +65,13 @@
 .btn-square {
     width: 38px;
     height: 38px;
+}
+
+@media (max-width: 576px) {
+    .btn-square {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .btn-sm-square {
@@ -155,20 +162,25 @@
 
 /* Center the title on the image */
 .page-header h1,
-.about h1 {
+.about h1,
+#services h1,
+#task h1,
+#pages h1,
+#contact h1 {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--light);
-    font-size: 50px;
-    text-align: center;
+    color: var(--light); /* Color blanco */
+    font-size: 50px; /* Tamaño del texto */
+    text-align: center; /* Centrado horizontal */
 }
+
 .carousel-item img,
 .page-header,
 .about {
-    height: 600px; /* Increase the height */
+    height: 800px; /* Increase the height */
     background-size: cover;
     object-fit: cover;
 }
@@ -197,6 +209,7 @@
         visibility: hidden;
         transition: .5s;
     }
+}
 
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
@@ -204,7 +217,7 @@
         transition: .5s;
         opacity: 1;
     }
-}
+
 
 
 
@@ -218,7 +231,7 @@
     align-items: center;
     background: rgba(0, 0, 0, .1);
     z-index: 1;
-}
+    }
 
 .hero-divider {
     width: 70px;
@@ -257,8 +270,38 @@
     }
 }
 
-.page-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/trabajomanual.png) center center no-repeat;
+.page-headerAb {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/about.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerCont {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/contactUS.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerOpp {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/opport.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerTask {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/task.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerPag {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/pages.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerEmp {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/employer.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerJobS {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/job-seekers.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -266,7 +309,8 @@
     color: var(--light);
 }
 
-.page-header .breadcrumb-item,
+.
+page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
     font-size: 18px;
     color: var(--light);
@@ -275,7 +319,7 @@
 
 /*** About ***/
 .about {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/ejecutivo.png) left center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/image.png) left center no-repeat;
     background-size: cover;
 }
 
@@ -290,6 +334,12 @@
     outline: none !important;
     padding: 18px 20px 20px 28px;
     background: var(--primary);
+}
+
+.team-item img {
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .btn-play:before {
