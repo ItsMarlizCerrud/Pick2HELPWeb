@@ -1,0 +1,858 @@
+/********** Template CSS **********/
+:root {
+    --primary: #137ade;
+    --secondary: #057b39;
+    --tertiary: #09b7ae;
+    --light: #F1F3FA;
+    --dark: #154229;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+
+/*** Navbar ***/
+
+.logo-img {
+    height: 80px; /* ajusta el tamaño */
+    width: auto;
+}
+
+
+.navbar-brand {
+    position: relative;
+    right: 65px; /* mueve el logo */
+}
+
+
+.navbar-nav {
+    display: flex;
+    gap: 50px;
+}
+
+.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 35px;
+    padding: 25px 0;
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 15px;
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+/* =========================
+   RESET
+========================= */
+
+/*======================================
+            GOOGLE FONT
+=======================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#f7fbff;
+    color:#1d263b;
+    overflow-x:hidden;
+
+}
+
+/*======================================
+            SECTION
+=======================================*/
+
+.featured-section{
+
+    position:relative;
+    padding:90px 0 70px;
+    background:
+    radial-gradient(circle at left top,#dff8f5 0%,transparent 22%),
+    radial-gradient(circle at right top,#edf8ff 0%,transparent 25%),
+    radial-gradient(circle at left bottom,#edf9ff 0%,transparent 20%),
+    #f9fcff;
+
+}
+
+.container{
+
+    max-width:1320px;
+    margin:auto;
+    padding:0 20px;
+
+}
+
+/*======================================
+            TITLE
+=======================================*/
+
+.section-title{
+
+    margin-bottom:55px;
+
+}
+
+.subtitle{
+
+    display:block;
+    color:#18b79c;
+    font-weight:600;
+    font-size:20px;
+    margin-bottom:10px;
+
+}
+
+.section-title h2{
+
+    font-size:65px;
+    font-weight:800;
+    color:#0d1b39;
+    margin-bottom:18px;
+
+}
+
+.title-line{
+
+    width:70px;
+    height:5px;
+    margin:0 auto 25px;
+    border-radius:50px;
+    background:linear-gradient(90deg,#17c5a0,#36b8ff);
+
+}
+
+.section-title p{
+
+    color:#68758d;
+    font-size:20px;
+    line-height:1.9;
+
+}
+
+/*======================================
+            CATEGORY
+=======================================*/
+
+.category-pill{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    background:#fff;
+
+    color:#15b495;
+
+    font-weight:600;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.07);
+
+    margin-bottom:28px;
+
+}
+
+.category-pill i{
+
+    font-size:20px;
+
+}
+
+/*======================================
+            CARD
+=======================================*/
+
+.person-card{
+
+    display:grid;
+
+    grid-template-columns:
+    340px
+    90px
+    1fr
+    140px
+    210px;
+
+    align-items:center;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    margin-bottom:22px;
+
+    padding:22px 30px;
+
+    box-shadow:0 10px 35px rgba(20,45,90,.08);
+
+    transition:.35s;
+
+}
+
+.person-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 25px 55px rgba(20,45,90,.12);
+
+}
+
+/*======================================
+            PERSON INFO
+=======================================*/
+
+.person-info{
+
+    display:flex;
+    align-items:center;
+    gap:22px;
+
+}
+
+.person-info img{
+
+    width:92px;
+    height:92px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #f4f8fb;
+
+}
+
+.person-info h4{
+
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:6px;
+
+}
+
+.verified{
+
+    color:#16b898;
+    font-size:20px;
+    margin-left:6px;
+
+}
+
+.profession{
+
+    display:block;
+
+    color:#5e6b82;
+
+    font-size:18px;
+
+    margin-bottom:8px;
+
+}
+
+.location{
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    color:#7f8da6;
+
+    font-size:16px;
+
+}
+
+.location i{
+
+    color:#18b89b;
+
+}
+
+/*======================================
+            SERVICE ICON
+=======================================*/
+
+.service-icon{
+
+    width:72px;
+    height:72px;
+
+    margin:auto;
+
+    border-radius:20px;
+
+    background:#eefbf8;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.service-icon i{
+
+    font-size:34px;
+
+    color:#18b89b;
+
+}
+
+/*======================================
+            DESCRIPTION
+=======================================*/
+
+.description{
+
+    padding:0 35px;
+
+    color:#6d7688;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    border-left:1px solid #edf1f6;
+
+    border-right:1px solid #edf1f6;
+
+}
+
+/*======================================
+            PRICE
+=======================================*/
+
+.price{
+
+    text-align:center;
+
+}
+
+.price small{
+
+    display:block;
+
+    color:#8b97ac;
+
+    font-size:17px;
+
+    margin-bottom:8px;
+
+}
+
+.price h3{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:#172543;
+
+}
+
+/*======================================
+            PROFILE
+=======================================*/
+
+.profile{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.profile-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    font-size:17px;
+    font-weight:600;
+
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#16c79a,#18b7b8);
+
+    transition:.35s;
+
+    box-shadow:0 12px 25px rgba(24,184,155,.30);
+
+}
+
+.profile-btn:hover{
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 18px 35px rgba(24,184,155,.40);
+
+}
+
+.profile-btn i{
+
+    font-size:20px;
+
+}
+
+.profile span{
+
+    margin-top:14px;
+
+    font-size:15px;
+
+    color:#7b879d;
+
+}
+
+.profile span i{
+
+    color:#18b89b;
+
+    margin-right:6px;
+
+}
+
+/*======================================
+            PAGINATION
+=======================================*/
+
+.pagination-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:55px;
+
+}
+
+.pagination-wrapper a{
+
+    width:48px;
+    height:48px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#5b6880;
+
+    font-weight:600;
+
+    box-shadow:0 8px 22px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.pagination-wrapper a:first-child,
+.pagination-wrapper a:last-child{
+
+    width:auto;
+
+    padding:0 20px;
+
+    border-radius:40px;
+
+}
+
+.pagination-wrapper a:hover{
+
+    background:#18b89b;
+
+    color:#fff;
+
+    transform:translateY(-3px);
+
+}
+
+.pagination-wrapper .active{
+
+    background:linear-gradient(135deg,#18c79d,#19aee8);
+
+    color:#fff;
+
+}
+
+/*======================================
+            DECORATIONS
+=======================================*/
+
+.featured-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120px;
+
+    top:260px;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    background:rgba(23,199,160,.08);
+
+}
+
+.featured-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-130px;
+
+    top:40px;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(54,184,255,.07);
+
+}
+
+/* círculos */
+
+.section-title::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:80px;
+
+    top:80px;
+
+    width:28px;
+
+    height:28px;
+
+    border:7px solid #e9eef4;
+
+    border-radius:50%;
+
+}
+
+.section-title{
+
+    position:relative;
+
+}
+
+/* puntos */
+
+.featured-section .container::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:90px;
+
+    top:160px;
+
+    width:90px;
+
+    height:90px;
+
+    background-image:radial-gradient(#9fe4d8 2px,transparent 2px);
+
+    background-size:18px 18px;
+
+    opacity:.7;
+
+}
+
+.container{
+
+    position:relative;
+
+}
+
+/*======================================
+            TRANSITIONS
+=======================================*/
+
+.person-card,
+.profile-btn,
+.pagination-wrapper a{
+
+    transition:all .35s ease;
+
+}
+
+/*======================================
+            RESPONSIVE
+=======================================*/
+
+@media(max-width:1200px){
+
+.person-card{
+
+grid-template-columns:1fr;
+
+gap:25px;
+
+text-align:center;
+
+}
+
+.person-info{
+
+justify-content:center;
+
+}
+
+.description{
+
+border:none;
+
+padding:0;
+
+}
+
+.profile{
+
+margin-top:10px;
+
+}
+
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.section-title h2{
+
+font-size:52px;
+
+}
+
+.subtitle{
+
+font-size:18px;
+
+}
+
+.section-title p{
+
+font-size:18px;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.featured-section{
+
+padding:70px 0;
+
+}
+
+.section-title h2{
+
+font-size:40px;
+
+}
+
+.subtitle{
+
+font-size:16px;
+
+}
+
+.section-title p{
+
+font-size:16px;
+
+line-height:1.7;
+
+}
+
+.person-card{
+
+padding:25px;
+
+}
+
+.person-info{
+
+flex-direction:column;
+
+}
+
+.person-info img{
+
+width:90px;
+
+height:90px;
+
+}
+
+.person-info h4{
+
+font-size:24px;
+
+}
+
+.price h3{
+
+font-size:40px;
+
+}
+
+.pagination-wrapper{
+
+flex-wrap:wrap;
+
+gap:10px;
+
+}
+
+}
+
+/* Small phones */
+
+@media(max-width:576px){
+
+.container{
+
+padding:0 15px;
+
+}
+
+.person-card{
+
+border-radius:18px;
+
+}
+
+.category-pill{
+
+font-size:15px;
+
+padding:12px 20px;
+
+}
+
+.profile-btn{
+
+width:100%;
+
+}
+
+.pagination-wrapper a{
+
+width:42px;
+
+height:42px;
+
+font-size:14px;
+
+}
+
+.pagination-wrapper a:first-child,
+.pagination-wrapper a:last-child{
+
+padding:0 16px;
+
+}
+
+}
