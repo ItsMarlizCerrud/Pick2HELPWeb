@@ -209,6 +209,7 @@
         visibility: hidden;
         transition: .5s;
     }
+}
 
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
@@ -216,7 +217,7 @@
         transition: .5s;
         opacity: 1;
     }
-}
+
 
 
 
@@ -230,7 +231,7 @@
     align-items: center;
     background: rgba(0, 0, 0, .1);
     z-index: 1;
-}
+    }
 
 .hero-divider {
     width: 70px;
@@ -269,8 +270,38 @@
     }
 }
 
-.page-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/trabajomanual.png) center center no-repeat;
+.page-headerAb {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/about.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerCont {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/contactUS.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerOpp {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/opport.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerTask {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/task.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerPag {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/pages.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerEmp {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/employer.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-headerJobS {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/job-seekers.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -287,7 +318,7 @@
 
 /*** About ***/
 .about {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/team-1.jpg) left center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/image.png) left center no-repeat;
     background-size: cover;
 }
 
@@ -302,6 +333,12 @@
     outline: none !important;
     padding: 18px 20px 20px 28px;
     background: var(--primary);
+}
+
+.team-item img {
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .btn-play:before {

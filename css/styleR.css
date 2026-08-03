@@ -31,7 +31,7 @@
 
 .navbar-nav {
     display: flex;
-    gap: 35px;
+    gap: 50px;
 }
 
 .sticky-top {
@@ -209,7 +209,7 @@ a{
 
 nav{
     display:flex;
-    gap:50px;
+    gap:0px;
 }
 
 nav a{
@@ -489,6 +489,10 @@ nav a{
         #3f82ff,
         #5b97ff
     );
+}
+
+.text-register{
+    color:white;
 }
 
 /* DIVIDER */
