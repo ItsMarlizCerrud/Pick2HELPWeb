@@ -31,6 +31,7 @@
 }
 
 
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -143,24 +144,6 @@
 }
 
 
-.carousel-item img {
-    height: 800px; /* Adjust the height as needed */
-    object-fit: cover;
-}
-/* Adjust the height of main section images */
-.carousel-item img,
-.page-header,
-.about {
-    height: 700px; /* Increase the height */
-    background-size: cover;
-    object-fit: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
 /* Center the title on the image */
 .page-header h1,
 .about h1,
@@ -178,13 +161,7 @@
     text-align: center; /* Centrado horizontal */
 }
 
-.carousel-item img,
-.page-header,
-.about {
-    height: 800px; /* Increase the height */
-    background-size: cover;
-    object-fit: cover;
-}
+
 
 
 
@@ -257,10 +234,10 @@
     border: 15px solid var(--primary);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     #header-carousel .carousel-item {
         position: relative;
-        min-height: 500px;
+        min-height: 800px;
     }
     
     #header-carousel .carousel-item img {
@@ -320,8 +297,8 @@ page-header .breadcrumb-item,
 
 /*** About ***/
 .about {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/image.png) left center no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/image.png) center center no-repeat;
+    background-size: 100% 100%;
 }
 
 .btn-play {
