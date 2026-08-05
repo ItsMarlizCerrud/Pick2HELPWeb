@@ -180,7 +180,7 @@
 .carousel-item img,
 .page-header,
 .about {
-    height: 600px; /* Increase the height */
+    height: 800px; /* Increase the height */
     background-size: cover;
     object-fit: cover;
 }
@@ -309,7 +309,8 @@
     color: var(--light);
 }
 
-.page-header .breadcrumb-item,
+.
+page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
     font-size: 18px;
     color: var(--light);
