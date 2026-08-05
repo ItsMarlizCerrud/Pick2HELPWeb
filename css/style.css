@@ -297,13 +297,10 @@ page-header .breadcrumb-item,
 
 /*** About ***/
 .about {
-<<<<<<< HEAD
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/image.png) center center no-repeat;
     background-size: 100% 100%;
-=======
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/about.jpg) left center no-repeat;
     background-size: cover;
->>>>>>> ea6d7f3a4e247044f164f10ed17f9a6ac0391b32
 }
 
 .btn-play {
