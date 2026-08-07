@@ -27,20 +27,18 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="css/styleABOUT.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/about.js"></script>
+
+   </head>
 
 <body>
-    <!-- Spi
-     nner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
 
-    </div>
-    <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
+   
+          <!-- Topbar Start -->
     <div class="container-fluid bg-primary text-white d-none d-lg-flex">
         <div class="container py-3">
             <div class="d-flex align-items-center">
@@ -99,305 +97,472 @@
     </div>
     <!-- Navbar End -->
 
+ 
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-headerAb py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <h1 class="display-2 text-white mb-4 animated slideInDown">About Us</h1>
-            <nav aria-label="breadcrumb animated slideInDown"> <!-- REVISAR ANIMACIOOOOONNNN  -->
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-primary" aria-current="page">About</li>
-                </ol>
-            </nav>
+
+<!--==========================================
+                HERO
+===========================================-->
+
+<section class="about-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <h1>About Us</h1>
+
+            <div class="hero-breadcrumb">
+
+                <a href="index.html">Home</a>
+
+                <span>/</span>
+
+                <span class="active">About Us</span>
+
+            </div>
+
         </div>
+
     </div>
-    <!-- Page Header End -->
 
+</section>
 
+<!--==========================================
+                ABOUT
+===========================================-->
 
-    <!-- About Start -->
-    <div class="container-fluid about mb-5" style="margin-top: 6rem;">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-lg-6">
-                    <div class="h-100 d-flex align-items-center justify-content-center" style="min-height: 400px;">
-                        <button type="button" class="btn-play">
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-lg-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white rounded-top p-5 mt-lg-5">
-                        <p class="fs-5 fw-medium text-primary">About Us</p>
-                        <div class="row g-5 pt-2 mb-5">
-                            <div class="col-sm-6">
-                                <img class="img-fluid mb-4" src="img/icon/icon-5.png" alt="">
-                                <h5 class="mb-3">Managed Services</h5>
-                                <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="row align-items-center gy-5">
+
+            <div class="col-lg-6">
+
+                <div class="about-left">
+
+                    <span class="mini-title">
+
+                        ABOUT PICK2HELP
+
+                    </span>
+
+                    <h2>
+
+                        Connecting People With Trusted Local Services
+
+                    </h2>
+
+                    <p>
+
+                        Pick2Help is a community-driven platform designed to
+                        connect people with reliable service providers quickly
+                        and securely. Whether you need help at home,
+                        transportation, tutoring, or technical assistance,
+                        our mission is to make finding trusted help simple.
+
+                    </p>
+
+                    <div class="row g-4 mt-4">
+
+                        <div class="col-md-6">
+
+                            <div class="feature-card">
+
+                                <div class="feature-icon">
+
+                                    <i class="bi bi-people-fill"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h5>Community</h5>
+
+                                    <p>
+
+                                        Bringing people together through
+                                        trusted local services.
+
+                                    </p>
+
+                                </div>
+
                             </div>
-                            <div class="col-sm-6">
-                                <img class="img-fluid mb-4" src="img/icon/icon-2.png" alt="">
-                                <h5 class="mb-3">Dedicated Experts</h5>
-                                <span>Clita erat ipsum et lorem et sit sed stet lorem</span>
-                            </div>
+
                         </div>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Explore More</a>
+
+                        <div class="col-md-6">
+
+                            <div class="feature-card">
+
+                                <div class="feature-icon">
+
+                                    <i class="bi bi-award-fill"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h5>Quality</h5>
+
+                                    <p>
+
+                                        Connecting users with dependable
+                                        and verified workers.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
+
+                    <a href="tasks.html" class="explore-btn">
+
+                        Explore Services
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
                 </div>
+
             </div>
+
+            <div class="col-lg-6">
+
+                <div class="about-image-box">
+
+                    <div class="circle-bg"></div>
+
+                    <img src="img/fotitofamiliar.png" alt="About Pick2Help">
+
+                    <div class="dots"></div>
+
+                </div>
+
+            </div>
+
         </div>
+
     </div>
-    <!-- About End -->
 
+</section>
 
-    <!-- Team Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.5s" style="max-width: 400px;">
-                <p class="fs-5 fw-medium text-primary">Our Team</p>
-                <h1 class="display-5 mb-5">Our Expert People Ready to Help You</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/Daniel.png" alt="Daniel">
-                        <h5>Daniel Villar</h5>
-                        <span class="text-primary">Superate Student</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/Sese.png" alt="Serena">
-                        <h5>Serena Carvajal</h5>
-                        <span class="text-primary">Superate Student</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/Kathlyn.png" alt="Kathlyn">
-                        <h5>Kathlyn Quintero</h5>
-                        <span class="text-primary">Superate Student</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/Angel.png" alt="Angel">
-                        <h5>Angel Pineda</h5>
-                        <span class="text-primary">Superate Student</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/Adolfo.png" alt="Adolfo">
-                        <h5>Adolfo Tejeira</h5>
-                        <span class="text-primary">Superate Student</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/Estefany.png" alt="Estefany">
-                        <h5>Estefany Bailarin</h5>
-                        <span class="text-primary">Superate Student</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/Juan.png" alt="Juan">
-                        <h5>Juan Miranda</h5>
-                        <span class="text-primary">Superate Student</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/Marliz.png" alt="Marliz">
-                        <h5>Marliz Cerrud</h5>
-                        <span class="text-primary">Superate Student</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+<!--==========================
+        OUR TEAM
+===========================-->
 
-                <!-- Removed duplicate and invalid class -->
+<section class="team-section py-5">
 
-<<<<<<< HEAD
-            </div>
+    <div class="container">
+
+        <!-- Título -->
+
+        <div class="section-heading text-center mb-5">
+
+            <span class="mini-title">OUR TEAM</span>
+
+            <h2>Our Expert People Ready to Help You</h2>
+
+            <p>
+                Meet experienced professionals committed to providing reliable
+                and high-quality services.
+            </p>
+
         </div>
-    </div>
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Our Office</h4>
-=======
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <h5></h5>
-                        <span class="text-primary"></span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
+
+        <!-- Slider -->
+
+        <div class="team-slider">
+
+            <button class="team-prev">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+
+            <div class="swiper teamSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <!-- Daniel -->
+
+                    <div class="swiper-slide">
+
+                        <div class="member-card">
+
+                            <div class="member-image">
+                                <img src="img/Daniel.png" alt="Daniel">
+                            </div>
+
+                            <div class="member-info">
+
+                                <h4>
+                                    Daniel Villar
+                                </h4>
+
+                                <span class="profession">
+                                    Superate's Student
+                                </span>
+
+                            </div>
+
+                        </div>
+
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/Eudelys.png" alt="Eudelys">
-                        <h5>Eudelys Valdés</h5>
-                        <span class="text-primary">Superate Student</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
+
+                    <!-- Marliz -->
+
+                    <div class="swiper-slide">
+
+                        <div class="member-card">
+
+                            <div class="member-image">
+                                <img src="img/Marliz.png" alt="Marliz">
+                            </div>
+
+                            <div class="member-info">
+
+                                <h4>
+                                    Marliz Cerrud
+                                </h4>
+
+                                <span class="profession">
+                                    Superate's Student
+                                </span>
+
+                            </div>
+
+                        </div>
+
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <img class="img-fluid mb-4" src="img/Yilenis.png" alt="Yilenis">
-                        <h5>Yilenis Ramos</h5>
-                        <span class="text-primary">Superate Student</span>
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
+
+                    <!-- Juan -->
+
+                    <div class="swiper-slide">
+
+                        <div class="member-card">
+
+                            <div class="member-image">
+                                <img src="img/Juan.png" alt="Juan">
+                            </div>
+
+                            <div class="member-info">
+
+                                <h4>
+                                    Juan Miranda
+                                </h4>
+
+                                <span class="profession">
+                                    Superate's Student
+                                </span>
+
+                            </div>
+
+                        </div>
+
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded overflow-hidden pb-4">
-                        <ul class="team-social">
-                            <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
+
+                    <!-- Eudelys -->
+
+                    <div class="swiper-slide">
+
+                        <div class="member-card">
+
+                            <div class="member-image">
+                                <img src="img/Eudelys.png" alt="Eudelys">
+                            </div>
+
+                            <div class="member-info">
+
+                                <h4>
+                                    Eudelys Valdés
+                                </h4>
+
+                                <span class="profession">
+                                    Superate's Student
+                                </span>
+
+                            </div>
+
+                        </div>
+
                     </div>
-                <!-- Removed duplicate and invalid class -->
->>>>>>> ea6d7f3a4e247044f164f10ed17f9a6ac0391b32
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+507 123-1234</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Info@Pick2Help.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+
+                    <!-- Adolfo -->
+
+                    <div class="swiper-slide">
+
+                        <div class="member-card">
+
+                            <div class="member-image">
+                                <img src="img/Adolfo.png" alt="Adolfo">
+                            </div>
+
+                            <div class="member-info">
+
+                                <h4>
+                                    Adolfo Tejeira
+                                </h4>
+
+                                <span class="profession">
+                                    Superate's Student
+                                </span>
+
+                            </div>
+
+                        </div>
+
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Business Hours</h4>
-                    <p class="mb-1">Monday - Friday</p>
-                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
-                    <p class="mb-1">Saturday</p>
-                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
-                    <p class="mb-1">Sunday</p>
-                    <h6 class="text-light">Closed</h6>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">New User</h4>
-                    <p>Inicia sesión rápido aquí.</p>
-                    <div class="position-relative w-100">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+
+                    <!-- Kathlyn -->
+
+                    <div class="swiper-slide">
+
+                        <div class="member-card">
+
+                            <div class="member-image">
+                                <img src="img/Kathlyn.png" alt="Kathlyn">
+                            </div>
+
+                            <div class="member-info">
+
+                                <h4>
+                                    Kathlyn Quintero
+                                </h4>
+
+                                <span class="profession">
+                                    Superate's Student
+                                </span>
+
+                            </div>
+
+                        </div>
+
                     </div>
+
+                    <!-- Estefany -->
+
+                    <div class="swiper-slide">
+
+                        <div class="member-card">
+
+                            <div class="member-image">
+                                <img src="img/Estefany.png" alt="Estefany">
+                            </div>
+
+                            <div class="member-info">
+
+                                <h4>
+                                    Estefany Bailarin
+                                </h4>
+
+                                <span class="profession">
+                                    Superate's Student
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Angel -->
+
+                    <div class="swiper-slide">
+
+                        <div class="member-card">
+
+                            <div class="member-image">
+                                <img src="img/Angel.png" alt="Angel">
+                            </div>
+
+                            <div class="member-info">
+
+                                <h4>
+                                    Angel Pineda
+                                </h4>
+
+                                <span class="profession">
+                                    Superate's Student
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Serena -->
+
+                    <div class="swiper-slide">
+
+                        <div class="member-card">
+
+                            <div class="member-image">
+                                <img src="img/Serena.png" alt="Serena">
+                            </div>
+
+                            <div class="member-info">
+
+                                <h4>
+                                    Serena Carvajal
+                               </h4>
+
+                                <span class="profession">
+                                    Superate's Student
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Yilenis -->
+
+                    <div class="swiper-slide">
+
+                        <div class="member-card">
+
+                            <div class="member-image">
+                                <img src="img/Yilenis.png" alt="Yilenis">
+                            </div>
+
+                            <div class="member-info">
+
+                                <h4>
+                                    Yilenis Ramos
+                                </h4>
+
+                                <span class="profession">
+                                    Superate's Student
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
+
+            <button class="team-next">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+
         </div>
+
+        <div class="swiper-pagination team-pagination mt-4"></div>
+
     </div>
-    <!-- Footer End -->
 
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="fw-medium text-light" href="#">Your Site Name</a>, All Right Reserved.
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    
-                    <!--/*** The author’s attribution link below must remain intact on your website. ***/-->
-                    <!--/*** If you wish to remove this credit link, please purchase the Pro Version from https://htmlcodex.com . ***/-->
-                    Designed By <a class="fw-medium text-light" href="https://htmlcodex.com">HTML Codex</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Copyright End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
-
-</html>
+</section>
