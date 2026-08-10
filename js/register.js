@@ -1,28 +1,35 @@
 const registerBtn = document.getElementById("registerBtn");
 
-registerBtn.addEventListener("click", function () {
+if (registerBtn) {
+    registerBtn.addEventListener("click", function (event) {
+        event.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
-    const lastname = document.getElementById("phone").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value;
-    
-    if (!name || !lastname || !email || !password) {
-        alert("Please complete all fields.");
-        return;
-    }
+        const name = document.getElementById("name")?.value.trim() || "Guest User";
+        const phone = document.getElementById("phone")?.value.trim() || "0000000000";
+        const email = document.getElementById("email")?.value.trim() || "guest@example.com";
+        const password = document.getElementById("password")?.value || "";
 
-    const user = {
-        name: name,
-        lastname: lastname,
-        email: email,
-        password: password,
-        userType: userType
-    };
+        if (!name || !phone || !email || !password) {
+            alert("Please complete all fields.");
+            return;
+        }
 
-    localStorage.setItem("user", JSON.stringify(user));
+        const userType = window.location.pathname.includes("registerEmpy.html") ? "employer" : "jobseeker";
 
-    alert("Account created successfully!");
+        const user = {
+            name: name,
+            phone: phone,
+            email: email,
+            password: password,
+            userType: userType,
+            createdAt: new Date().toISOString()
+        };
 
-    window.location.href = "login.html";
-});
+        localStorage.setItem("user", JSON.stringify(user));
+        localStorage.setItem("loggedIn", "true");
+        localStorage.setItem("currentUser", user.email);
+
+        alert("Account created successfully!");
+        window.location.href = "index.html";
+    });
+}

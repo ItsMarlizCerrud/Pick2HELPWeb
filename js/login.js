@@ -1,27 +1,28 @@
 const loginBtn = document.getElementById("loginBtn");
 
-loginBtn.addEventListener("click", function () {
+if (loginBtn) {
+    loginBtn.addEventListener("click", function (event) {
+        event.preventDefault();
 
-    const email = document.getElementById("loginEmail").value.trim();
-    const password = document.getElementById("loginPassword").value;
+        const emailInput = document.getElementById("loginEmail").value.trim();
+        const passwordInput = document.getElementById("loginPassword").value;
 
-    const user = JSON.parse(localStorage.getItem("user"));
+        const user = JSON.parse(localStorage.getItem("user"));
 
-    if (!user) {
-        alert("No account found. Please register first.");
-        return;
-    }
+        if (!user) {
+            alert("No account found. Please register first.");
+            return;
+        }
 
-    if (email === user.email && password === user.password) {
+        const isEmailMatch = emailInput.toLowerCase() === user.email.toLowerCase();
+        const isNameMatch = emailInput.toLowerCase() === user.name.toLowerCase();
 
-        localStorage.setItem("loggedIn", "true");
-
-        window.location.href = "profile.html";
-
-    } else {
-
-        alert("Incorrect email or password.");
-
-    }
-
-});
+        if ((isEmailMatch || isNameMatch) && passwordInput === user.password) {
+            localStorage.setItem("loggedIn", "true");
+            localStorage.setItem("currentUser", user.email);
+            window.location.href = "index.html";
+        } else {
+            alert("Incorrect email/username or password.");
+        }
+    });
+}
