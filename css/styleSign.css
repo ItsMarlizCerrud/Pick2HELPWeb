@@ -127,7 +127,7 @@ body{
     min-height:820px;
     overflow:hidden;
     border-radius:25px;
-    background:linear-gradient(135deg,#021f3c,#021127);
+    background:linear-gradient(135deg,#021A2A,#011420);
 }
 
 .content{
@@ -347,7 +347,7 @@ body{
     flex:1;
     border:none;
     outline:none;
-    font-family:'Poppins';
+    /*font-family:'Poppins';*/
 }
 
 .input-box i{
@@ -421,7 +421,7 @@ body{
     }
 
     .worker{
-        width:420px;
+        /*width:420px;*/
     }
 
     .circle-bg{

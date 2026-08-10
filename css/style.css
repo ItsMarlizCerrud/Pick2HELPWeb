@@ -299,7 +299,7 @@ page-header .breadcrumb-item,
 .about {
     background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/image.png) center center no-repeat;
     background-size: 100% 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/register/about.jpg) left center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/pexels-ron-lach-10349997.jpg) left center no-repeat;
     background-size: cover;
 }
 

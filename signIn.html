@@ -28,6 +28,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/styleSign.css" rel="stylesheet">
+
+    <script src="js/login.js"></script>
+
 </head>
 
 <body>
@@ -204,14 +207,14 @@
 
                 <div class="input-box">
                     <i class="far fa-envelope"></i>
-                    <input type="text" placeholder="Enter your email or username">
+                    <input type="text" id= "loginEmail" placeholder="Enter your email or username">
                 </div>
 
                 <label>Password</label>
 
                 <div class="input-box">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Enter your password">
+                    <input type="password" id= "loginPassword" placeholder="Enter your password">
                     <i class="far fa-eye"></i>
                 </div>
 
@@ -226,7 +229,7 @@
 
                 </div>
 
-                <button class="signin-btn">
+                <button class="signin-btn" id="loginBtn">
                     Sign In
             </button>
 
